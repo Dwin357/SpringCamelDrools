@@ -1,0 +1,15 @@
+implement spring - camel context setup (outside web context)
+...have a main method which has a sleep thread :: keeps it open for 5min
+
+implement logging component (write to csv file)
+implement sql component (polling)
+
+write filtering bean using drools
+
+rule "ItemsFromList" 
+when 
+  $list : List(); 
+  $item : MyObject() from $list; 
+then 
+  // do something 
+end 

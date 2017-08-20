@@ -1,0 +1,11 @@
+package io.github.dwin357.rules
+
+import io.github.dwin357.models.Position
+
+rule "Chase is restricted lender"
+	when 
+		positionVarAssignment : Position(lender=="Chase")
+	then
+		positionVarAssignment.setAvaliablePercentage(0);
+	end
+
