@@ -6,6 +6,16 @@ implement sql component (polling)
 
 write filtering bean using drools
 
+Drools
+ x basic drools example
+ x basic drools+spring example
+ x basic spring+camel example
+ - spring+camel, interact with message through exchange
+ - basic drools+spring+camel example
+ - implement rules set that works on collections
+ - implement so session has multiple rules
+
+
 rule "ItemsFromList" 
 when 
   $list : List(); 

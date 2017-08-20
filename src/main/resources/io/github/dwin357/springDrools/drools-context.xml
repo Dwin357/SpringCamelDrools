@@ -13,5 +13,6 @@
 		</drools:resources>
 	</drools:kbase>
 	
-	<drools:ksession id="positionSession" name="positionSession" type="stateless" kbase="simpleSpringPositionBase" />
+	<!-- this seems discoverable (as a bean) by either id or name -->
+	<drools:ksession id="anything" name="positionSessionBeanName" type="stateless" kbase="simpleSpringPositionBase" />
 </beans>
